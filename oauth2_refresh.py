@@ -20,8 +20,8 @@ DEFAULT_TOKEN = "token.json"
 
 
 @click.command()
-@click.option("--creds_dir", default="creds/credentials.json", help="Path to GCP credentials file")
-@click.option("--token_dir", default="creds/token.json", help="Path to GCP credentials file")
+@click.option("--creds_dir", default="creds", help="Path to GCP credentials file")
+@click.option("--token_dir", default="creds", help="Path to GCP credentials file")
 def refresh_oauth2_token(creds_dir: str, token_dir: str) -> None:
     """Refresh oauth2 token.
     Credentials file must be named: `credentials.json`
